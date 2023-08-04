@@ -1,0 +1,136 @@
+body {
+  background-color: rgb(143, 192, 255);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+
+  top: 10px;
+  justify-content: baseline;
+  align-items: center;
+}
+h2 {
+  margin: 0;
+  font-family: "Caesar Dressing", cursive;
+  font-size: 30px;
+  margin-left: 10px;
+  color: aliceblue;
+  letter-spacing: 3px;
+}
+nav > ul {
+  display: flex;
+}
+nav > ul > a {
+  text-decoration: none;
+}
+nav > ul > a > li {
+  list-style: none;
+  margin-right: 20px;
+  padding: 0;
+  font-size: 20px;
+  font-family: "Abel", sans-serif;
+  border-style: none;
+  margin-bottom: 0;
+  position: relative;
+  color: aliceblue;
+  text-transform: uppercase;
+  border: none;
+  transform: scaleX(0.9);
+  transition: 250ms ease-in-out;
+}
+
+nav > ul > a > li:hover {
+  /* background-color: #d62828; */
+  /* transition: 0.3s ease-in-out; */
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  transform: scaleX(1);
+  letter-spacing: 3px;
+}
+nav > ul > a > li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: tomato;
+  position: relative;
+  transition: 500ms ease-in-out;
+  transform: scaleX(0);
+}
+nav > ul > a > li:hover::after {
+  height: 3px;
+  width: auto;
+  transform: scaleX(1);
+  transition: 250ms ease-in-out;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  background-color: rgba(86, 86, 86, 0.536);
+  padding: 10px;
+  /* position: sticky; */
+  border-radius: 20px;
+  background-image: url(/images/nc-logo-1-wh-svg.svg);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 50px;
+}
+footer > div > a {
+  text-decoration: none;
+  margin-left: 60px;
+  color: aliceblue;
+  font-family: sans-serif;
+}
+.name ul {
+  list-style: none;
+  display: flex;
+  color: aliceblue;
+}
+.name ul li {
+  margin-right: 20px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+table {
+  align-items: center;
+  justify-content: center;
+}
+table tr td img {
+  height: 750px;
+  width: 750px;
+  border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav > ul {
+    margin-top: 10px;
+  }
+
+  nav > ul > a > li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  footer > div > a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
