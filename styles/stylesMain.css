@@ -1,5 +1,5 @@
 body {
-  background-image: url(/images/body-bg.jpg);
+  background-image: url(../images/body-bg.jpg);
   background-size: cover;
   transition: 0.5s;
   position: relative;
@@ -126,7 +126,7 @@ footer {
   padding: 10px;
 
   border-radius: 20px;
-  background-image: url(/images/nc-logo-1-wh-svg.svg);
+  background-image: url(../images/nc-logo-1-wh-svg.svg);
   background-repeat: no-repeat;
   background-position: 10px;
   background-size: 50px;
